@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG • Services - Transport maritime & forwarding</title>
+    <!-- Tailwind + police + Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('P2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        .section-light {
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(2px);
+        }
+        .section-dark {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(2px);
+        }
+        .stat-badge {
+            background: linear-gradient(145deg, #0b2b4f, #123b6e);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- ========== EN-TÊTE NOIR TRANSPARENT ========== -->
+    <header class="sticky top-0 z-30 border-b border-white/10 py-3" style="background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px);">
+        <div class="container mx-auto px-5 md:px-8 flex flex-wrap items-center justify-between gap-y-2">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <!-- Remplacez par votre logo -->
+                <img src="logo.jpg" alt="Logo MG" class="h-12 w-auto">
+                <span class="text-2xl font-bold text-white">MG</span>
+            </div>
+            <!-- Navigation toujours visible -->
+            <nav class="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-medium">
+                <a href="index.html" class="text-white hover:text-blue-300 whitespace-nowrap">Accueil</a>
+                <a href="services.html" class="text-blue-300 font-semibold whitespace-nowrap">Services</a>
+                <a href="contact.html" class="text-white hover:text-blue-300 whitespace-nowrap">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== SECTION NOS SERVICES (LIGNES) ========== -->
+        <section class="section-light py-16">
+            <div class="container mx-auto px-5 md:px-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-[#0b2b4f]">Nos services • Our services</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-3">Trois lignes maritimes régulières.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Oran / Almeria -->
+                    <div class="bg-white bg-opacity-90 p-8 rounded-3xl shadow-lg border">
+                        <h2 class="text-2xl font-bold text-center">Oran ⇄ Almeria</h2>
+                        <p class="text-gray-600 text-center mt-3">Ligne directe – traversée rapide, dédouanement inclus.</p>
+                        <p class="text-xs text-gray-400 text-center mt-2">Direct line – fast transit, customs included.</p>
+                    </div>
+                    <!-- Oran / Marseille -->
+                    <div class="bg-white bg-opacity-90 p-8 rounded-3xl shadow-lg border">
+                        <h2 class="text-2xl font-bold text-center">Oran ⇄ Marseille</h2>
+                        <p class="text-gray-600 text-center mt-3">Ligne historique.</p>
+                        <p class="text-xs text-gray-400 text-center mt-2">Historic route .</p>
+                    </div>
+                    <!-- Casablanca / Marseille -->
+                    <div class="bg-white bg-opacity-90 p-8 rounded-3xl shadow-lg border">
+                        <h2 class="text-2xl font-bold text-center">Casablanca ⇄ Marseille</h2>
+                        <p class="text-gray-600 text-center mt-3">Ligne stratégique – connexion Maghreb – Europe.</p>
+                        <p class="text-xs text-gray-400 text-center mt-2">Strategic link Maghreb – Europe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== STATISTIQUE : +1500 conteneurs/remorques ========== -->
+        <section class="py-12">
+            <div class="container mx-auto px-5 md:px-8">
+                <div class="stat-badge max-w-3xl mx-auto text-center">
+                    <p class="text-3xl md:text-4xl font-bold">+1500</p>
+                    <p class="text-xl">conteneurs et remorques par mois</p>
+                    <p class="text-sm text-blue-200 mt-1">containers & trailers per month</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION NOTRE FLOTTE RORO (3 NAVIRES AVEC PHOTOS) ========== -->
+        <section class="section-light py-16">
+            <div class="container mx-auto px-5 md:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-[#0b2b4f]">Notre flotte RoRo • Our RoRo fleet</h2>
+                    <p class="text-gray-600">Trois navires modernes dédiés au transport roulier.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Merna 1 -->
+                    <div class="bg-white bg-opacity-90 rounded-3xl shadow-lg overflow-hidden">
+                        <!-- PHOTO : remplacez l'URL par votre image -->
+                        <img src="merna.jpg" alt="Merna 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#0b2b4f]">Merna 1</h3>
+                            <p class="text-sm text-blue-600 mb-2">RoRo / ConRo</p>
+                            <p class="text-gray-700 text-sm"> Idéal pour véhicules et engins.</p>
+                        </div>
+                    </div>
+                    <!-- Mimer -->
+                    <div class="bg-white bg-opacity-90 rounded-3xl shadow-lg overflow-hidden">
+                        <img src="mimer.jpg" alt="Mimer" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#0b2b4f]">Mimer</h3>
+                            <p class="text-sm text-blue-600 mb-2">RoRo / PCTC</p>
+                            <p class="text-gray-700 text-sm"> Idéal pour vos business.</p>
+                           
+                        </div>
+                    </div>
+                    <!-- Med Express -->
+                    <div class="bg-white bg-opacity-90 rounded-3xl shadow-lg overflow-hidden">
+                        <img src="med.jpg" alt="Med Express" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#0b2b4f]">Med Express</h3>
+                            <p class="text-sm text-blue-600 mb-2">RoRo / ConRo</p>
+                            <p class="text-gray-700 text-sm">Idéal pour vos marchés de masse</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER AVEC COORDONNÉES ========== -->
+    <footer class="bg-[#0b2b4f] text-white py-10">
+        <div class="container mx-auto px-5 md:px-8">
+            <!-- Deux colonnes bureaux -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Oran -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2 text-blue-300"></i> Oran - Algérie</h3>
+                    <p class="text-sm text-blue-100">Cité Mobilart Gambetta, Oran 31000</p>
+                    <p class="text-sm text-blue-100 mt-1"><i class="fas fa-phone-alt mr-2"></i> +213 550 96 55 55 </p>
+                    <p class="text-sm text-blue-100"><i class="fas fa-envelope mr-2"></i> shipping@m-logistique.com</p>
+                </div>
+                <!-- Valencia -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2 text-blue-300"></i> Valencia - Espagne</h3>
+                    <p class="text-sm text-blue-100">Calle JOAQUIN COSTA, 38, 46005 Valencia</p>
+                    <p class="text-sm text-blue-100 mt-1"><i class="fas fa-phone-alt mr-2"></i> +33 675 80 22 92</p>
+                    <p class="text-sm text-blue-100"><i class="fas fa-envelope mr-2"></i> shipping@m-logistique.com</p>
+                </div>
+            </div>
+            <!-- Logo et copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/20 pt-6">
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="" class="h-8 w-auto">
+                    <span class="text-xl font-bold">MG Shipping</span>
+                </div>
+                <div class="text-sm text-center md:text-right">
+                    <p>© 2026 MG – Tous droits réservés. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG • Contact</title>
+    <!-- Tailwind + police + Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('office.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        .section-light {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- ========== EN-TÊTE NOIR TRANSPARENT ========== -->
+    <header class="sticky top-0 z-30 border-b border-white/10 py-3" style="background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px);">
+        <div class="container mx-auto px-5 md:px-8 flex flex-wrap items-center justify-between gap-y-2">
+            <!-- Logo (à remplacer par votre image) -->
+            <div class="flex items-center gap-3">
+                <img src="logo.jpg" alt="Logo MG" class="h-12 w-auto">
+                <span class="text-2xl font-bold text-white">MG</span>
+            </div>
+            <!-- Navigation toujours visible -->
+            <nav class="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-medium">
+                <a href="index.html" class="text-white hover:text-blue-300 whitespace-nowrap">Accueil</a>
+                <a href="services.html" class="text-white hover:text-blue-300 whitespace-nowrap">Services</a>
+                <a href="contact.html" class="text-blue-300 font-semibold whitespace-nowrap">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-light py-16">
+            <div class="container mx-auto px-5 md:px-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-[#0b2b4f]">Nos bureaux • Our offices</h1>
+                    <p class="text-gray-800 max-w-2xl mx-auto mt-3">
+                        Deux implantations pour mieux vous servir.<br>
+                        <span class="text-sm">Two locations to serve you better.</span>
+                    </p>
+                </div>
+
+                <!-- Deux cartes de coordonnées identiques -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Bureau Oran -->
+                    <div class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-lg border backdrop-blur-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-map-marker-alt text-3xl text-[#0b2b4f]"></i>
+                            <h2 class="text-2xl font-semibold text-[#0b2b4f]">Oran - Algérie</h2>
+                        </div>
+                        <div class="space-y-3 text-gray-700">
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-location-dot text-blue-600 mt-1 w-5"></i>
+                                <span>Cité Mobilart Gambetta, Oran 31000</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-phone-alt text-blue-600 mt-1 w-5"></i>
+                                <span>+213 550 96 55 55</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-envelope text-blue-600 mt-1 w-5"></i>
+                                <span>shipping@m-logistique.com</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-clock text-blue-600 mt-1 w-5"></i>
+                                <span>Dimanche-Jeudi 8h30–18h30 • Sam 9h–13h</span>
+                            </p>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-4 italic">Bureau principal / Main office</p>
+                    </div>
+
+                    <!-- Bureau Valencia -->
+                    <div class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-lg border backdrop-blur-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-map-marker-alt text-3xl text-[#0b2b4f]"></i>
+                            <h2 class="text-2xl font-semibold text-[#0b2b4f]">Valencia - Espagne</h2>
+                        </div>
+                        <div class="space-y-3 text-gray-700">
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-location-dot text-blue-600 mt-1 w-5"></i>
+                                <span>Calle JOAQUIN COSTA, 38, 46005 Valencia</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-phone-alt text-blue-600 mt-1 w-5"></i>
+                                <span>+33 675 80 22 92</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-envelope text-blue-600 mt-1 w-5"></i>
+                                <span>shipping@m-logistique.com</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-clock text-blue-600 mt-1 w-5"></i>
+                                <span>Lun-Ven 9h–19h • sur rendez-vous</span>
+                            </p>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-4 italic">Bureau Europe / European office</p>
+                    </div>
+                </div>
+
+                <!-- Optionnel : carte ou informations supplémentaires -->
+                <div class="mt-12 text-center text-gray-900">
+                    <p><i class="fas fa-globe mr-2"></i> shipping@m-logistique.com (siège / headquarters)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER (identique aux autres pages) ========== -->
+    <footer class="bg-[#0b2b4f] text-white py-10">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Rappel Oran (mais déjà présent, on peut simplifier ou garder) -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2 text-blue-300"></i> Oran - Algérie</h3>
+                    <p class="text-sm text-blue-100"> Cité Mobilart Gambetta, Oran 31000</p>
+                    <p class="text-sm text-blue-100 mt-1"><i class="fas fa-phone-alt mr-2"></i> +213 550 96 55 55</p>
+                    <p class="text-sm text-blue-100"><i class="fas fa-envelope mr-2"></i> shipping@m-logistique.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2 text-blue-300"></i> Valencia - Espagne</h3>
+                    <p class="text-sm text-blue-100">Calle JOAQUIN COSTA, 38, 46005 Valencia</p>
+                    <p class="text-sm text-blue-100 mt-1"><i class="fas fa-phone-alt mr-2"></i> +33 675 80 22 92</p>
+                    <p class="text-sm text-blue-100"><i class="fas fa-envelope mr-2"></i>  shipping@m-logistique.com </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/20 pt-6">
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="" class="h-8 w-auto">
+                    <span class="text-xl font-bold">MG </span>
+                </div>
+                <div class="text-sm text-center md:text-right">
+                    <p>© 2026 MG – Tous droits réservés. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
